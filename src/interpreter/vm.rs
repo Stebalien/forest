@@ -184,6 +184,7 @@ where
         multi_engine: &MultiEngine,
         enable_tracing: VMTrace,
     ) -> Result<Self, anyhow::Error> {
+        let _ = wasmtime::Config::default();
         let network_version = chain_config.network_version(epoch);
         if network_version >= NetworkVersion::V21 {
             let mut config = NetworkConfig_v4::new(network_version.into());
