@@ -5950,6 +5950,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "mach2"
+version = "0.4.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "19b955cdeb2a02b9117f121ce63aa52d08ade45de53e48fe6a38b39c10f6f709"
+dependencies = [
+ "libc",
+]
+
+[[package]]
 name = "match_cfg"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -10018,7 +10027,7 @@ dependencies = [
  "wasmtime-environ 19.0.2",
  "wasmtime-jit-icache-coherence 19.0.2",
  "wasmtime-runtime 19.0.2",
- "wasmtime-slab",
+ "wasmtime-slab 19.0.2",
  "windows-sys 0.52.0",
 ]
 
@@ -10031,23 +10040,33 @@ dependencies = [
  "anyhow",
  "bitflags 2.6.0",
  "bumpalo",
+ "cc",
  "cfg-if",
  "hashbrown 0.14.5",
  "indexmap 2.6.0",
  "libc",
  "libm",
  "log",
+ "mach2",
+ "memfd",
  "object 0.36.5",
  "once_cell",
  "paste",
  "postcard",
+ "psm",
+ "rustix 0.38.37",
  "serde",
  "serde_derive",
+ "smallvec",
  "sptr",
  "target-lexicon",
  "wasmparser 0.215.0",
+ "wasmtime-asm-macros 24.0.1",
  "wasmtime-environ 24.0.1",
+ "wasmtime-jit-icache-coherence 24.0.1",
+ "wasmtime-slab 24.0.1",
  "wasmtime-versioned-export-macros 24.0.1",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -10064,6 +10083,15 @@ name = "wasmtime-asm-macros"
 version = "19.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "110aa598e02a136fb095ca70fa96367fc16bab55256a131e66f9b58f16c73daf"
+dependencies = [
+ "cfg-if",
+]
+
+[[package]]
+name = "wasmtime-asm-macros"
+version = "24.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "64414227e19556d4372f9688458c5673606de83473eb66cd0514d36ea8808cab"
 dependencies = [
  "cfg-if",
 ]
@@ -10267,6 +10295,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "wasmtime-jit-icache-coherence"
+version = "24.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fa89fc440f0edca882ba6d1890608898e6f0193afdc504c0a64478ec53622bd6"
+dependencies = [
+ "anyhow",
+ "cfg-if",
+ "libc",
+ "windows-sys 0.52.0",
+]
+
+[[package]]
 name = "wasmtime-runtime"
 version = "12.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -10325,6 +10365,12 @@ name = "wasmtime-slab"
 version = "19.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "20c58bef9ce877fd06acb58f08d003af17cb05cc51225b455e999fbad8e584c0"
+
+[[package]]
+name = "wasmtime-slab"
+version = "24.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "682b7a5b6772c4e4de8c696fc619ec97930b5e89098db9bee22c1136e002438b"
 
 [[package]]
 name = "wasmtime-types"
