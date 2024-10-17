@@ -15,6 +15,7 @@ env:
   CXX: sccache clang++
   FIL_PROOFS_PARAMETER_CACHE: /var/tmp/filecoin-proof-parameters
   SHELL_IMAGE: busybox
+  SKIP_ISLE: 1
 jobs:
   build-ubuntu:
     name: Build Ubuntu
