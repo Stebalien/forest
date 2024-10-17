@@ -130,7 +130,8 @@ num-rational = "0.4"
 num-traits = "0.2"
 num_cpus = "1"
 nunny = { version = "0.2", features = ["serde", "quickcheck", "schemars"] }
-object = { version = "0.36", default-features = false, features = ['write_core', 'std'] }
+object = { version = "0.36", default-features = false, features = ['write_core', 'std', 'write_std'] }
+gimli = { version = "0.29", default-features = false, features = ['read', 'std', 'write'] }
 once_cell = "1"
 openrpc-types = "0.4"
 parity-db = { version = "0.5", default-features = false }

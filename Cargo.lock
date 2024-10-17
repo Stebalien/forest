@@ -3352,6 +3352,7 @@ dependencies = [
  "fvm_shared 3.10.0",
  "fvm_shared 4.3.3",
  "gethostname",
+ "gimli 0.29.0",
  "git-version",
  "glob",
  "group",
