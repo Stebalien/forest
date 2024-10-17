@@ -3275,6 +3275,7 @@ dependencies = [
  "rand_distr",
  "raw_sync_2",
  "rayon",
+ "regalloc2",
  "regex",
  "regex-automata 0.4.8",
  "reqwest",
