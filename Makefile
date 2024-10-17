@@ -5,7 +5,7 @@ install-quick:
 	cargo install --profile quick --locked --path . --force
 
 install-slim:
-	cargo install --no-default-features --features slim --locked --path . --force
+	cargo install --no-default-features --features slim --profile release --locked --path . --force
 
 install-slim-quick:
 	cargo install --profile quick --no-default-features --features slim --locked --path . --force
