@@ -197,6 +197,8 @@ uuid = { version = "1", features = ["v4", "serde"] }
 walkdir = "2"
 zstd = "0.13"
 cranelift-control = { version = "0.111.1" }
+cranelift-isle = { version = "0.111.1" }
+cranelift-codegen-meta = { version = "0.111.1" }
 
 # optional dependencies
 console-subscriber = { version = "0.4", features = ["parking_lot"], optional = true }

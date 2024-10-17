@@ -1592,6 +1592,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "cranelift-codegen-meta"
+version = "0.111.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cd5e4ee12262a135efbef3ced4ab2153adafe4adc55f36af94f9d73be0f7505d"
+dependencies = [
+ "cranelift-codegen-shared 0.111.1",
+]
+
+[[package]]
 name = "cranelift-codegen-shared"
 version = "0.99.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1602,6 +1611,12 @@ name = "cranelift-codegen-shared"
 version = "0.106.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d792ecc1243b7ebec4a7f77d9ed428ef27456eeb1f8c780587a6f5c38841be19"
+
+[[package]]
+name = "cranelift-codegen-shared"
+version = "0.111.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5b9374a2a5f060f72e3080fe1c87c9ff4bef2cbe798faae60daf276fb1a13968"
 
 [[package]]
 name = "cranelift-control"
@@ -1684,6 +1699,12 @@ name = "cranelift-isle"
 version = "0.106.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6f6e1869b6053383bdb356900e42e33555b4c9ebee05699469b7c53cdafc82ea"
+
+[[package]]
+name = "cranelift-isle"
+version = "0.111.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f8b9b7e088b784796ea8aa5947c1cc12034c1b076a077ec2a5a287da717fa746"
 
 [[package]]
 name = "cranelift-native"
@@ -3182,7 +3203,9 @@ dependencies = [
  "clap",
  "colored",
  "console-subscriber",
+ "cranelift-codegen-meta 0.111.1",
  "cranelift-control 0.111.1",
+ "cranelift-isle 0.111.1",
  "criterion",
  "crypto_secretbox",
  "cs_serde_bytes",
