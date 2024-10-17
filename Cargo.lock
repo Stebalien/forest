@@ -1584,9 +1584,9 @@ dependencies = [
 
 [[package]]
 name = "cranelift-codegen"
-version = "0.107.2"
+version = "0.107.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9ee7fde5cd9173f00ce02c491ee9e306d64740f4b1a697946e0474f389999e13"
+checksum = "35bb55da792dc46a35e6e283b02b9d6aa7f21349691f41176d8ecf4a1494b6ad"
 dependencies = [
  "bumpalo",
  "cranelift-bforest 0.107.2",
@@ -1594,7 +1594,7 @@ dependencies = [
  "cranelift-codegen-shared 0.107.2",
  "cranelift-control 0.107.2",
  "cranelift-entity 0.107.2",
- "cranelift-isle 0.107.2",
+ "cranelift-isle 0.107.1",
  "gimli 0.28.1",
  "hashbrown 0.14.5",
  "log",
@@ -1738,9 +1738,9 @@ checksum = "6f6e1869b6053383bdb356900e42e33555b4c9ebee05699469b7c53cdafc82ea"
 
 [[package]]
 name = "cranelift-isle"
-version = "0.107.2"
+version = "0.107.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b325ce81c4ee7082dc894537eb342c37898e14230fe7c02ea945691db3e2dd01"
+checksum = "dcb6f70d94826074699bc350c33dab82eb6f06022a3518bb466f501569d7379e"
 
 [[package]]
 name = "cranelift-native"
@@ -3239,7 +3239,7 @@ dependencies = [
  "clap",
  "colored",
  "console-subscriber",
- "cranelift-codegen 0.107.2",
+ "cranelift-codegen 0.107.1",
  "criterion",
  "crypto_secretbox",
  "cs_serde_bytes",
