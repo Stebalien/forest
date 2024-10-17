@@ -197,6 +197,12 @@ uuid = { version = "1", features = ["v4", "serde"] }
 walkdir = "2"
 zstd = "0.13"
 cranelift-codegen = { version = "=0.107.0", default-features = false, features = ["std", "unwind"] }
+cranelift-bforest = { version = "=0.107.0", default-features = false }
+cranelift-codegen-meta = { version = "=0.107.0", default-features = false }
+cranelift-codegen-shared = { version = "=0.107.0", default-features = false }
+cranelift-control = { version = "=0.107.0", default-features = false }
+cranelift-isle = { version = "=0.107.0", default-features = false }
+cranelift-entity = { version = "=0.107.0", default-features = false }
 
 # optional dependencies
 console-subscriber = { version = "0.4", features = ["parking_lot"], optional = true }
